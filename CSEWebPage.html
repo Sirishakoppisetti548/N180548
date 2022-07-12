@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WT Website</title>
+<link rel="stylesheet" type="text/css" href="webpagestyles.css">
+<style>
+    .bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+</style>
+</head>
+<body>
+
+<h1 align="center"><b>Home Page</b></h1>
+<img src="/SMS_photo1.jpg" alt="Sirisha" width="100px" height="100px" id="image" onmouseover="change();" onmouseout="unchange();">
+<div class="menu">
+<ul>
+<li style="background-color: rgba(18, 14, 56,0.7);" ><a href="CSEWebPage.html">Home<img src="home.png" height="50px" width="50px" align="center"></a></li>
+<li>
+<a href="#">Exams<span>&#9660;</span></a>
+<ul>
+<li style="background-color:rgba(18, 14, 56,0.7);"  ><a href="login.html" target="#block">Login</a></li>
+<li> <a href="FormValidation.html" target="_blank">Registration</a></li>
+</ul>
+</li>
+<li style="background-color: rgba(18, 14, 56,0.7);">
+<a href="#">Branches<span>&#9660;</span></a>
+<ul>
+<li><a href="#">ECE</a></li>
+<li style="background-color: rgba(18, 14, 56,0.7);"><a href="#">CIVIL</a></li>
+<li><a href="#">MME</a></li>
+<li style="background-color: rgba(18, 14, 56,0.7);">
+<a href="#">CSE<span>&#9658 ;</span></a>
+<ul>
+<li><a href="#">FACULTY</a></li>
+<li style="background-color: rgba(18, 14, 56,0.7);"><a href="#">STUDENT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#">Contacts<span>&#9660;</span></a>
+<ul>
+<li style="background-color: rgba(18, 14, 56,0.7);"><a href="https://goo.gl/maps/fv9HEdkcFizb8gd56">Address & Details</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+<a href="#">
+    <div class="container" onclick="myFunction(this)" style="float: right;">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      
+      <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
+
+</a>
+<div id="block" >
+
+
+</div>
+<main>
+<div class="slide" name="ss" id="slider">
+ 
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="/first.jpg" style="width:100%">
+      <div class="text">...</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="/67.jpg" style="width:100%">
+      <div class="text">...</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="/blue1.jpg" style="width:100%">
+      <div class="text">...</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+</div>
+</main>
+
+<aside>
+            <div  class="lside-body">
+            <h3 align="center">STUDENT DETAILS</h3>
+            <input class="search" type="text" name="search" id="filter" placeholder="search"onkeyup="search()">
+            <input type="button" class="search_btn" value="Search" onclick="search()">
+            <ul type="None" id="lside-list">
+                <li class="li">N180351-Majjiga Lakshmi</li>
+                <li class="li"> N180371-Uchula Hasmitha</li>
+                <li class="li">N180750-Yatham Bhargavi</li>
+                <li class="li">N180749-Koppisetti Swathi</li>
+                <li class="li">N180518-Uppada Soujanya</li>
+                <li class="li">N180548-Koppisetti Sirisha</li>
+                <li class="li">N180814-Syed Jareentaj</li>
+                <li class="li">N180649-Magathala Kavyasri</li>
+                <li class="li">N180636-Seera Bhargavi</li>
+                <li class="li">N180872-Bhupathi Santhvana</li>
+                <li class="li">N181164-V G K N Mani</li>
+                <li class="li">N181128-Gollapalli Srilakshmi</li>
+                <li class="li">N180015-Depuri Srilakshmi</li>
+                <li class="li">N180140-Kasmikota Parvathi</li>
+                <li class="li">N180114-Karinki Sindhuja</li>
+                <li class="li">N180086-Mareedu Thrisaali</li>
+                <li class="li">N180275-Talari Swaroopa</li>
+                <li class="li">N180473-Alupana Devi</li>
+                <li class="li">N180490-Siddantham Majulatha</li>
+                <li class="li">N180798-Chowdula Lakshmi Prasanna</li>
+                <li class="li">N180798-Chowdula Lakshmi Prasanna</li>
+                <li class="li">N180798-Chowdula Lakshmi Prasanna</li>
+                <li class="li">N180798-Chowdula Lakshmi Prasanna</li>
+                <li class="li">N180678-Sureddi Priyanka</li>
+                <li class="li" >N180798-Chowdula Lakshmi Prasanna</li>
+                <li class="li">N180789-Manikonda Gayathri</li>
+                <li class="li">N180530-Kokkilagadda Neeraja</li>
+                </ul>
+             </div>
+            <div class="rside-body">
+            <h3 align="center">NOTIFICATIONS</h3><hr><hr>
+            <marquee direction="up" scrollamount="5">
+            <ul type="none" id="rside-list">
+            <li>Mar 15 - <a href="https://rguktn.ac.in/downloads/Circular_Nuzvid_Mess_Timings.pdf" target="_blank"> Circular to Students regarding mess timings</a></li><hr>
+
+            <li>May 13 - <a href="https://rguktn.ac.in/downloads/vidya%20deevena_instalment_final_circular9.pdf" target="_blank">Circular for Jagananna Vidya Deevena installment academic year 2021-2022</a></li><hr>
+
+            <li>May 26 - <a href="https://rguktn.ac.in/downloads/Jagananna%20Vasathi%20Deevena%20-%20Circular-4.pdf" target="_blank">Circular for Jagananna VAsathi Deevena installment for Acedamic year 2021-2022</a></li><hr>
+
+            <li>July 21 - <a href="#" target="_blank">Circular to Students regarding mid 2 exams</a></li><hr>
+
+            <li>Dec 4 - <a href="https://rguktn.ac.in/downloads/Circular-RGUKT-Nuzvid-Students-COVID-19_Protocols.pdf" target="_blank">Circular to in-campus students regarding covid-19 protocols</a></li><hr>
+
+            <li>June 8 - <a href="https://rguktn.ac.in/downloads/Circular-FoodCourt-%20Nuzvid-Students.pdf" target="_blank">Circular to students regarding food court</a></li><hr>
+           
+            </ul>
+            </marquee>
+
+           
+            </div>
+    </aside>
+<footer id="main-footer">
+            <p><small><b>Created By Sirisha # &copy;SE</b></small></p>
+            <div class="foot">
+            View count:
+<a href="https://www.hitwebcounter.com" target="_blank">
+    <img src="https://hitwebcounter.com/counter/counter.php?page=8012813&style=0033&nbdigits=6&type=page&initCount=100000" 
+    title="Free Counter" Alt="web counter"   border="0" /></a>
+    </div>
+            <!-- <div class="foot">
+                View Count:
+                <img src="https://hitwebcounter.com/counter/counter.php?page=8005342&style=0001&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                                                  
+            </div> -->
+    </footer>
+<script type="text/javascript">
+function change(){
+document.getElementById("image").src="/sirisha.jpg";
+}
+function unchange(){
+document.getElementById("image").src="/SMS_photo1.jpg";
+}
+// function reg(){
+// document.getElementById("block").style.margin-top="150px";
+
+// }
+</script>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+var slideindex= 0;
+showSSlides();
+function showSSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideindex++;
+  if (slideindex > slides.length) {slideindex = 1}
+  slides[slideindex-1].style.display = "block";
+  setTimeout(showSSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<script>
+  var num=1;
+  setInterval(function(){
+      document.getElementById("btn_" + num).checked=true;
+      num=num+1;
+      if (num > 3){
+          num=1;   
+      }
+  },3000)
+  
+  function search(){
+      var text=document.getElementById("filter").value.toLowerCase();
+      var items=document.getElementsByClassName("li");
+      Array.from(items).forEach((item)=>{
+          itemvalue=item.firstChild.textContent;
+          if(itemvalue.toLowerCase().indexOf(text)!=-1){
+              item.style.display="block";
+          }
+          else{
+              item.style.display="none";
+          }
+      });
+      // alert(text)
+  }
+</script>
+</body>
+</html>
